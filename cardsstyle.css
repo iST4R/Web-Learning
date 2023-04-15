@@ -1,0 +1,83 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.card-list {
+    display: flex;
+    padding: 1.5rem;
+    margin-top: 10rem;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    width: 400px;
+    min-width: 300px;
+    height: 400px;
+    padding: 1.5rem;
+
+    border-radius: 25px;
+    background: rgb(12, 12, 37);
+    box-shadow: -1rem 0 25px rgb(59, 57, 57);
+
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-1rem);
+}
+
+.card:hover~.card {
+    transform: translateX(80px);
+}
+
+.card:not(:first-child) {
+    margin-left: -80px;
+}
+
+.card-header {
+    display: flex;
+    justify-content: center;
+}
+
+.image {
+    max-width: 300px;
+    padding: 0.5rem;
+
+    border-radius: 15px;
+    background: rgb(3, 4, 63);
+    box-shadow: 0px 0px 3px white ;
+}
+
+.text {
+    font-size: 1.4rem;
+}
+
+.btn {
+    width: 150px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+
+    font-weight: bold;
+    color: black;
+
+    border-radius: 20px;
+    background: white;
+    box-shadow: 0px 0px 5px white;
+}
+
+.btn:hover {
+    background: rgb(68, 173, 68);
+    transition: .3s;
+}
